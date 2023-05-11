@@ -1,0 +1,27 @@
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: crimson;
+}
+
+/* body{ 
+    background-color: yellow;
+}*/
+
+p{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+
+.my-4{border-top: 4px solid crimson;}
+
+
+h5{
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+color: blueviolet;
+
+}
+
+p{color: blue;}
