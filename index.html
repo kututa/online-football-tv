@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>online/football streaming site HD</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>online/football streaming site HD</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-    
+
+<div id="login-form" class="login-form">
+  <h3>Login</h3>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
   <section id="live-matches" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-5">Live Matches</h2>
       <div class="row">
         <div class="col-md-6 mb-4   mt-4">
           <div class="card">
-            <img class="card-img-top " src="images/english.jpg" alt="English Premier League" style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
+            <img class="card-img-top " src="images/english.jpg" alt="English Premier League"
+              style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
             <div class="card-body">
               <h5 class="card-title">English Premier League</h5>
-              <p class="card-text">Watch live matches from one of the most popular leagues in the world. Don't miss a single game from top teams like Manchester United, Liverpool, and Chelsea.</p>
-              <a href="#" class="btn btn-primary">Watch Now</a>
+              <p class="card-text">Watch live matches from one of the most popular leagues in the world. Don't miss a
+                single game from top teams like Manchester United, Liverpool, and Chelsea.</p>
+              <button id="watch-now-button" class="btn btn-primary">Watch Now</button>
+              <p id="match-status"></p>
             </div>
-            
+
           </div>
         </div>
         <div class="col-md-6 mb-4  mt-4">
           <div class="card">
-            <img class="card-img-top " src="images/france.jpg" alt="English Premier League" style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
+            <img class="card-img-top " src="images/france.jpg" alt="English Premier League"
+              style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
             <div class="card-body">
               <h5 class="card-title">France League 1</h5>
-              <p class="card-text">Watch live matches from France's top professional football league. See your favorite teams like PSG, Lyon, and Marseille compete for the championship.</p>
+              <p class="card-text">Watch live matches from France's top professional football league. See your favorite
+                teams like PSG, Lyon, and Marseille compete for the championship.</p>
               <a href="#" class="btn btn-primary">Watch Now</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-4  mt-4">
+        <div class="col-md-6 mb-4  ">
           <div class="card">
-            <img class="card-img-top " src="images/germany.jpg" alt="English Premier League" style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
+            <img class="card-img-top " src="images/germany.jpg" alt="English Premier League"
+              style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
             <div class="card-body">
               <h5 class="card-title">Bundesliga</h5>
-              <p class="card-text">Bundesliga is the top professional football league in Germany, featuring 18 teams competing for the championship. Some of the most successful clubs in the league's history include Bayern Munich, Borussia Dortmund, and Borussia Mönchengladbach.</p>
+              <p class="card-text">Bundesliga is the top professional football league in Germany, featuring 18 teams
+                competing for the championship. Some of the most successful clubs in the league's history include Bayern
+                Munich, Borussia Dortmund, and Borussia Mönchengladbach.</p>
 
               <a href="#" class="btn btn-primary">Watch Now</a>
             </div>
           </div>
         </div>
+      
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top " src="images/italy.jpg" alt="English Premier League" style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
+            <img class="card-img-top " src="images/italy.jpg" alt="English Premier League"
+              style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
             <div class="card-body">
               <h5 class="card-title">Serie A</h5>
-              <p class="card-text"> Don't miss Serie A  the top professional football league in Italy, featuring 20 teams competing for the championship. Some of the most successful clubs in the league's history include Juventus, AC Milan, and Inter Milan.</p>
+              <p class="card-text"> Don't miss Serie A the top professional football league in Italy, featuring 20 teams
+                competing for the championship. Some of the most successful clubs in the league's history include
+                Juventus, AC Milan, and Inter Milan.</p>
 
               <a href="#" class="btn btn-primary">Watch Now</a>
             </div>
           </div>
         </div>
-            
-      
+
+
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top " src="images/spain.jpg" alt="La Liga" style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
+            <img class="card-img-top " src="images/spain.jpg" alt="La Liga"
+              style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
             <div class="card-body">
               <h5 class="card-title">La Liga</h5>
-              <p class="card-text">Experience the excitement of live matches from Spain's top professional football league. Watch your favorite teams like Barcelona, Real Madrid, and Atletico Madrid compete for the championship.</p>
+              <p class="card-text">Experience the excitement of live matches from Spain's top professional football
+                league. Watch your favorite teams like Barcelona, Real Madrid, and Atletico Madrid compete for the
+                championship.</p>
               <a href="#" class="btn btn-primary">Watch Now</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top " src="images/images.png" alt="English Premier League" style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
+            <img class="card-img-top " src="images/images.png" alt="English Premier League"
+              style="height: 200px; box-shadow: 0px 0px 5px rgba(0,0,0,0.3);">
             <div class="card-body">
               <h5 class="card-title">UEFA champions League</h5>
-              <p class="card-text">Get front-row access to the biggest club football tournament in the world, featuring top teams from Europe's best leagues.</p>
+              <p class="card-text">Get front-row access to the biggest club football tournament in the world, featuring
+                top teams from Europe's best leagues.</p>
               <a href="#" class="btn btn-primary">Watch Now</a>
             </div>
           </div>
         </div>
-      
+
       </div>
     </div>
     <style>
@@ -95,6 +124,7 @@
         width: 100%;
         object-fit: cover;
       }
+
       .row {
         display: flex;
         flex-wrap: wrap;
@@ -104,62 +134,105 @@
   </section>
 
 
-<!-- footer section -->
 
- <hr style="border-top: 4px solid blue;">
 
-<footer class="bg-dark text-light">
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-md-4">
-        <h5>Contact Us</h5>
-        <p>80100 Tudor<br>Mombasa, Kenya<br>+254769275595<br>info@footballstreaminghd.com</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Live Matches</a></li>
-          <li><a href="#">Upcoming Matches</a></li>
-          <li><a href="#">Subscribe</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h5>Follow Us</h5>
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer> 
 
-  <!-- <div class="bg-secondary py-3">
-    <div class="container text-center">
-      <small>&copy; 2023 kututa & partnership with Dominic Bar and restaurant katangini. All rights reserved.</small>
-    </div>
-  </div>  -->
- </footer>
-<footer class="bg-danger text-white py-3">
-  <div class="container">
-    <hr class="my-4">
-    <div class="row">
-      <div class="col-md-6">
-        <p>Copyright © [2023 Dominic Bar and restaurant katangini. All rights reserved] 
-        </p>
-      </div>
-      <div class="col-md-6">
-        <p class="text-md-right"> <a href="http://kututa.000webhostapp.com/" >Designed by kututa</a></p>
+
+
+  <!-- footer section -->
+
+  <hr style="border-top: 4px solid blue;">
+
+  <footer class="bg-dark text-light">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>80100 Tudor<br>Mombasa, Kenya<br>+254769275595<br>info@footballstreaminghd.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Live Matches</a></li>
+            <li><a href="#">Upcoming Matches</a></li>
+            <li> <a href="#"> <class id="show-login-form">Subscribe<class/> </a> </li>
+              <li><a href="#">create account with us</a></li>
+
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer> 
+  </footer>
+
+  
+  </footer>
+  <footer class="bg-danger text-white py-3">
+    <div class="container">
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Copyright © [2023 Dominic Bar and restaurant katangini. All rights reserved]
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p class="text-md-right"> <a href="http://kututa.000webhostapp.com/">Designed by kututa</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-<script src="script.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $('#watch-now-button').click(function() {
+        // Clear previous match status
+        $('#match-status').empty();
+  
+        // Fetch data from the API
+        $.ajax({
+          url: 'your-api-endpoint-url', // Replace with your actual API endpoint URL
+          method: 'GET',
+          dataType: 'json',
+          success: function(data) {
+            // Loop through the API response and display the matches
+            for (const match of data) {
+              const matchStatus = match.status === 'Ongoing' ? 'Live' : 'Upcoming';
+              const matchInfo = `${matchStatus} - ${match.league}: ${match.teams} (${match.time})`;
+  
+              // Create a new paragraph element to display the match info
+              const matchElement = $('<p>').text(matchInfo);
+  
+              // Append the match info to the match-status element
+              $('#match-status').append(matchElement);
+            }
+          },
+          error: function() {
+            // Handle the error if the API request fails
+            const errorElement = $('<p>').text('Failed to fetch match data.');
+            $('#match-status').append(errorElement);
+          }
+        });
+      });
+    });
+  </script>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
